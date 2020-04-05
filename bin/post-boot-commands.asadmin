@@ -1,0 +1,5 @@
+#set configs.config.server-config.security-service.auth-realm.certificate.property.assign-groups=
+set configs.config.server-config.security-service.auth-realm.certificate.property.assign-groups=admins
+#delete-auth-realm certificate
+#create-auth-realm --classname com.sun.enterprise.security.auth.realm.certificate.CertificateRealm --property assign-groups=admins certificate
+#
