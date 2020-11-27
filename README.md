@@ -1,7 +1,7 @@
 This repository is set up to demostrate a series possible bugs in Payara server 5.201 related to the configuration of certificate realms. 
 Steps to reproduce: 
 
-1. In Payara 5.201 production domain, enable client authentication for http-listener-2. 
+1. In Payara 5.2020.6 production domain, enable client authentication for http-listener-2. Disable HTTP/2 for http-listener-2 as HTTP/2 does not support client certificate authentication. 
 
 2. Make sure that no group assignment is set for realm "certificate".
 
